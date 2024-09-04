@@ -15,19 +15,20 @@ let py2 = -1;
 
 let canvas;
 let speedSlider;
-let lenthSlider;
+// let lenthSlider;
 
 function setup() {
   createCanvas(CANVAS_SIZE, CANVAS_SIZE);
 
   canvas = createGraphics(CANVAS_SIZE, CANVAS_SIZE);
   speedSlider = createSlider(0, 1, 1, 0.01);
-  lenthSlider = createSlider(40, 100, 100, 1);
+  // Disable for Rod
+  // lenthSlider = createSlider(40, 100, 100, 1);
 
-  lenthSlider.input(() => {
-    r1 = lenthSlider.value();
-    r2 = lenthSlider.value();
-  });
+  // lenthSlider.input(() => {
+    // r1 = lenthSlider.value();
+    // r2 = lenthSlider.value();
+  // });
 }
 
 function draw() {
